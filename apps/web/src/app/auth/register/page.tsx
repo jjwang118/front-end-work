@@ -31,11 +31,7 @@ export default function RegisterPage() {
     }
 
     if (data.user) {
-      await (supabase as any).from("profiles").insert({
-        id: data.user.id,
-        username,
-        role: "reader",
-      });
+      // Profile is auto-created by the handle_new_user trigger in Supabase
       setSuccess(true);
     }
     setLoading(false);
