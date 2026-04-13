@@ -192,3 +192,18 @@ input:focus {
   background: linear-gradient(90deg, transparent, rgba(232, 168, 56, 0.3), transparent);
   animation: shimmer 3s infinite;
 }
+
+/* Header link hover states */
+.header-logo:hover,
+.header-nav-link:hover {
+  color: #e8a838 !important;
+}
+
+.header-btn-outline:hover {
+  color: #e8a838 !important;
+  border-color: rgba(232,168,56,0.3) !important;
+}
+
+.header-nav-link:hover {
+  background: none !important;
+}
